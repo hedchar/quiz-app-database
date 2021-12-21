@@ -1,7 +1,4 @@
-
-drop database quiz_app;
 create database quiz_app;
-use tutoria;
 use quiz_app;
 
 create table users
@@ -77,5 +74,3 @@ create table user_questions_answers
     constraint `fk_u.user_id_to_uqa.`
         foreign key (user_id) references users(user_id)
 );
-
-drop table user_questions_answers;
